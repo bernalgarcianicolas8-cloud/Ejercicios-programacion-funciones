@@ -1,13 +1,13 @@
 funcion a <- M1N1
-	escribir "dijite la primera nota de español"
+	escribir "dijite la primera nota de espaÃ±ol"
 	leer a
 FinFuncion
 funcion b <- M1N2
-	escribir "dijite la segunda nota de español"
+	escribir "dijite la segunda nota de espaÃ±ol"
 	leer b
 FinFuncion
 funcion c <- M1N3
-	escribir "dijite la tercera nota de español"
+	escribir "dijite la tercera nota de espaÃ±ol"
 	leer c
 FinFuncion
 Funcion dato_prome1 <- calcularpromedio1(a, b, c)
@@ -47,7 +47,7 @@ funcion promedio <- calcularpromediogeneral(dato_prome1, dato_prome2, dato_prome
 	promedio <- (dato_prome1 + dato_prome2 + dato_prome3) / 3
 FinFuncion
 funcion dato_mensaje1 <- hacermensaje1(dato_prome1)
-	dato_mensaje1 <- "el promedio de español fue de: " + ConvertirATexto(dato_prome1)
+	dato_mensaje1 <- "el promedio de espaÃ±ol fue de: " + ConvertirATexto(dato_prome1)
 FinFuncion
 funcion imprimirmensaje1(dato_mensaje1)
 	escribir dato_mensaje1
@@ -92,8 +92,9 @@ proceso Calculode3materiaspromedio
 	dato_mensaje3 <- hacermensaje3(promedio3)
 	imprimirmensaje(dato_mensaje3)
 	
-	promediogeneral <- calcularpromediogeneral(dato_prome1, dato_prome2, dato_prome3)
-	dato_mensaje <- hacermensaje(promedio)
+	promediogeneral <- calcularpromediogeneral(promedio1, promedio2, promedio3)
+	dato_mensaje <- hacermensaje(promediogeneral)
 	imprimirmensaje(dato_mensaje)
 FinProceso
+
 
